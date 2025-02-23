@@ -80,10 +80,12 @@ pipeline{
                 jf 'c show'
                 jf 'rt ping'
                 sh 'touch test-file'
-                jf 'rt u test-file jfrog-cli-remote-generic-local/'
+                jf 'rt u test-file jfrog-cli/'
                 jf 'rt bp'
-                jf 'rt dl jfrog-cli-remote-generic-local/test-file'
+                jf 'rt dl jfrog-cli/test-file'
             }
         } 
     }
 }
+
+
